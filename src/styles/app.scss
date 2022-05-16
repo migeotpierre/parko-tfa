@@ -33,8 +33,15 @@ body{
     color: #8800FF;
 }
 .introduction{
+    margin-top: 150px;
     display: flex;
+    justify-content: space-between;
     flex-direction: row;
+    align-items: center;
+}
+.introduction__image{
+    max-width: 50%;
+    right: 0px;
 }
 
 
