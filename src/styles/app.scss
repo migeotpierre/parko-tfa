@@ -10,12 +10,12 @@
 body{
     font-family: 'Open Sans', sans-serif;
 }
-.section--main{
+.section--main, .section--explication{
     margin: 24px 24px 24px 24px;
 }
 
 .header__logo{
-    width: 7em;
+    width: 6em;
 }
 .header{
     margin: 24px;
@@ -29,6 +29,10 @@ body{
     font-size: 32px;
     font-weight: 800;
 }
+.title-second{
+    font-size: 32px;
+    font-weight: 800;
+}
 .title--violet{
     color: #8800FF;
 }
@@ -39,9 +43,19 @@ body{
     flex-direction: row;
     align-items: center;
 }
-.introduction__image{
+.image{
     max-width: 40%;
+}
+.image--introduction{
     right: 0px;
+}
+.image--explication{
+    max-width: 60%;
+}
+.gps{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .introduction + p{
     margin-top: 20px;
@@ -67,6 +81,14 @@ body{
     text-align: center;
     font-size: 18px;
 }
+.section--explication h2{
+    margin-top: 100px;
+    margin-bottom: 25px;
+}
+.section--explication p{
+    margin-bottom: 50px;
+}
+
 
 
 
