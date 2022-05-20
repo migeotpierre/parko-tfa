@@ -10,7 +10,7 @@
 body{
     font-family: 'Open Sans', sans-serif;
 }
-.section--main, .section--explication{
+.section--main, .section--explication, .section--footer{
     margin: 24px 24px 24px 24px;
 }
 
@@ -41,7 +41,7 @@ body{
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
 }
 .image{
     max-width: 40%;
@@ -52,12 +52,37 @@ body{
 .image--explication{
     max-width: 60%;
 }
-.gps{
+.explication{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.introduction + p{
+
+
+
+
+
+.conclusion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.conclusion__images{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.image__conclusion--1{
+    transform: rotate(-10deg);
+    z-index: 1;
+}
+.image__conclusion--2{
+    transform: rotate(10deg);
+}
+
+
+
+.introduction p{
     margin-top: 20px;
     max-width: 30ch;
 }
@@ -111,22 +136,23 @@ body{
     }
     .title{
         font-size: 65px;
+        line-height: 80px;
+        margin-bottom: 50px;
     }
     .image{
         max-width: 20%;
     }
-    .image--introduction{
-        margin-right: 15px;
-    }
+
     .introduction{
         margin-top: 0px;
         display: flex;
         justify-content: space-between;
         flex-direction: row;
         align-items: center;
+        margin: 90px;
     }
-    .introduction + p{
-        margin-top: 20px;
+    .introduction  p{
+        margin-top: 0px;
         max-width: 50ch;
     }
     .button-download{
@@ -150,6 +176,24 @@ body{
         padding: 250px;
         text-align: center;
         font-size: 48px;
+    }
+    .explication{
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: center;
+        margin-top: 150px;
+    }
+    .explication--1{
+        flex-direction: row;
+    }
+    .section--explication h2{
+        font-size: 32px;
+        max-width: 18ch;
+        font-weight: 800;
+    }
+    .section--explication p{
+        margin-bottom: 50px;
+        max-width: 40ch;
     }
 
 
