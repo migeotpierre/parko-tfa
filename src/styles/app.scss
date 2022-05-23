@@ -9,9 +9,15 @@
 }
 body{
     font-family: 'Open Sans', sans-serif;
+
+}
+.container{
+    overflow: hidden;
+
 }
 .section--main, .section--explication, .section--conclusion{
     margin: 24px 24px 24px 24px;
+
 }
 .header__logo{
     width: 6em;
@@ -46,7 +52,10 @@ body{
     max-width: 40%;
 }
 .image--introduction{
-    right: 0px;
+
+    position: absolute;
+    opacity: 1;
+    right: 5px;
 }
 .image--explication{
     max-width: 60%;
@@ -99,7 +108,7 @@ body{
 
 .introduction p{
     margin-top: 20px;
-    max-width: 30ch;
+    max-width: 22ch;
 }
 .button-download{
     margin-top: 50px;
@@ -157,7 +166,10 @@ body{
     .image{
         max-width: 20%;
     }
+    .image--introduction{
+        right: 100px;
 
+    }
     .introduction{
         margin-top: 0px;
         display: flex;
