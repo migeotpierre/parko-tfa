@@ -7,6 +7,10 @@ gsap.from('.introduction__texte',{
     x: -100,
     duration: 1,
     opacity: 0,
+    scrollTrigger: {
+        trigger: ".introduction__texte",
+        toggleActions: "restart none restart none"
+    },
 
 
 })
@@ -15,12 +19,20 @@ gsap.from('.image--introduction',{
     duration: 1,
     opacity: 0,
     delay: 0.25,
+    scrollTrigger: {
+        trigger: ".introduction__texte",
+        toggleActions: "restart none restart none"
+    },
 
 })
 gsap.from('.button-download',{
     duration: 0.5,
     opacity: 0,
     delay: 1.5,
+    scrollTrigger: {
+        trigger: ".introduction__texte",
+        toggleActions: "restart none restart none"
+    },
 
 })
 gsap.from('.header__logo',{

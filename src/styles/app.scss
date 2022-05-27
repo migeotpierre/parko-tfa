@@ -171,6 +171,7 @@ body{
         right: 100px;
 
     }
+
     .introduction{
         margin-top: 0px;
         display: flex;
@@ -179,15 +180,17 @@ body{
         align-items: center;
         margin: 90px;
     }
-    .introduction  p{
+    
+    .introduction p{
         margin-top: 0px;
         max-width: 50ch;
     }
     .button-download{
         margin-top: 50px;
         display: flex;
-        justify-content: start;
+        justify-content: flex-start;
     }
+    
     .button-download img{
         max-width: 10%;
         margin-right: 40px;
@@ -322,3 +325,4 @@ input:focus + .slider {
 input:checked + .slider:before {
     transform: translateX(1.5em);
 }
+
