@@ -53,6 +53,9 @@ body{
 .section__case{
     margin-top: 100px;
 }
+.section__intro{
+    margin-bottom: 100px;
+}
 
 .title--case{
     margin-bottom: 25px;
@@ -85,6 +88,7 @@ body{
 }
 
 .title--phrase{
+    font-size: 25px;
     text-align: center;
 }
 .case__probleme p{
@@ -218,6 +222,21 @@ body{
     height: 150%;
     object-fit: cover;
 }
+.solution{
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title--solutions{
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+.solution img{
+    margin-top: 50px;
+    max-width: 70%;
+}
+
 
 
 
