@@ -13,13 +13,12 @@
 
 body{
     font-family: 'Open Sans', sans-serif;
-
 }
 .container{
     overflow: hidden;
 
 }
-.section--main, .section--explication, .section--conclusion, .section--intro, .section__case{
+.section--main, .section--explication, .section--conclusion, .section--intro, .section__case, .section__case--test, .title--phrase{
     margin: 24px 24px 24px 24px;
 
 }
@@ -88,6 +87,7 @@ body{
 }
 
 .title--phrase{
+    margin-top: 150px;
     font-size: 25px;
     text-align: center;
 }
@@ -245,30 +245,6 @@ body{
 
 
 
-.title--intro + p{
-
-    font-size: 25px;
-    font-weight: 400;
-
-}
-
-
-
-.title--case{
-
-    font-size: 25px;
-    font-weight: 400;
-}
-.texte__case p{
-
-    font-size: 25px;
-    font-weight: 400;
-}.texte__case  p + p{
-
-    font-size: 25px;
-    font-weight: 800;
-}
-
 
 
 
@@ -392,7 +368,7 @@ body{
         height: 100%;
         object-fit: cover;
     }
-    .section__case--projet, .section__case--recherches{
+    .section__case--projet, .section__case--recherches, .section__case--developpement, .section__case--test{
         display: grid;
         grid-template-columns: 2fr 3fr;
         grid-template-rows: 1fr;
@@ -401,22 +377,79 @@ body{
     }
     .title--case{ 
         grid-area: 1 / 1 / 2 / 2; 
-        padding-left: 100px;
+        padding-left: 200px;
         font-size: 25px;
         font-weight: 400;
     }
     .texte__case--projet, .texte__case--projet{
-        padding-right: 100px;
+        padding-right: 200px;
         grid-area: 1 / 2 / 2 / 3;
     }
     .case__problemes{
+        align-items: flex-start;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        padding-right: 100px;
-        padding-left: 100px;
+        padding-right: 200px;
+        padding-left: 200px;
+        margin-bottom: 350px;
+    }
+    .case__probleme p{
+        color: black;
+        font-size: 28px;
+        font-weight: 600;
+    }
+    .title--intro + p{
+        font-size: 25px;
+        font-weight: 400;
+    }
+    .title--case{
+        font-size: 25px;
+        font-weight: 400;
+    }
+    .texte__case p{
+        font-size: 25px;
+        font-weight: 400;
+    }
+    .texte__case  p + p{
+        font-size: 25px;
+        font-weight: 800;
     }
     
+    .title--phrase{
+        margin-top: 350px;
+        margin-bottom: 350px;
+        padding-left: 200px;
+        padding-right: 200px;
+        font-size: 65px;
+        font-weight: 800;
+    }
+    .solution{
+        margin-top: 250px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 300px;
+        padding-right: 300px;
+    }
+    .solution--2{
+        flex-direction: row-reverse;
+    }
+    .title--solutions{
+        font-size: 45px;
+        margin-bottom: 25px;
+        max-width: 20ch;
+    }
+    .title--solutions+ p{
+        font-size: 25px;
+        margin-bottom: 25px;
+        max-width: 50ch;
+    }
+    .solution img{
+        margin-top: 0px;
+        max-width: 30%;
+    }
 
 }
 
