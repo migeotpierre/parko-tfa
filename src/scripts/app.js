@@ -127,16 +127,16 @@ gsap.from(".description__texte",{
     },
 })
 
-gsap.from(".section__image img",{
-    y: 250,
-    duration: 3,
-    scrollTrigger: {
-        trigger: ".section__image img",
-        start: "top 90%",
-        end:"bottom 85%",
-        scrub: 0.5,
-    },
-})
+// gsap.from(".section__image img",{
+//     y: 250,
+//     duration: 3,
+//     scrollTrigger: {
+//         trigger: ".section__image img",
+//         start: "top 90%",
+//         end:"bottom 85%",
+//         scrub: 0.5,
+//     },
+// })
 
 
 
