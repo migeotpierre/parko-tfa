@@ -30,6 +30,7 @@
   },
   "dependencies": {
     "gsap": "^3.10.4",
-    "normalize.css": "^8.0.1"
+    "normalize.css": "^8.0.1",
+    "swiper": "^8.2.2"
   }
 }

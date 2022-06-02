@@ -1,5 +1,7 @@
+import { name } from "browser-sync";
 import { gsap } from "gsap";
 import ScrollTrigger from 'gsap/ScrollTrigger';
+
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -140,6 +142,10 @@ gsap.from(".description__texte",{
 
 
 
+
+
+
+      
 
 
 
