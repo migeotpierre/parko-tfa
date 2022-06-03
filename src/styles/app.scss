@@ -278,7 +278,6 @@ body{
     }
     .title{
         font-size: 65px;
-        line-height: 80px;
         margin-bottom: 50px;
     }
     .title--intro{
@@ -386,12 +385,12 @@ body{
     }
     .title--case{ 
         grid-area: 1 / 1 / 2 / 2; 
-        padding-left: 200px;
+        padding-left: 400px;
         font-size: 22px;
         font-weight: 400;
     }
-    .texte__case--projet, .texte__case--projet, .texte__case--recherches, .texte__case--developpement{
-        padding-right: 200px;
+    .texte__case--projet, .texte__case--projet, .texte__case--recherches, .texte__case--developpement, .texte__case--test{
+        padding-right: 400px;
         grid-area: 1 / 2 / 2 / 3;
     }
     .case__problemes{
@@ -418,30 +417,30 @@ body{
     }
     
     .title--phrase{
-        margin-top: 350px;
-        margin-bottom: 350px;
-        padding-left: 200px;
-        padding-right: 200px;
-        font-size: 65px;
+        margin-top: 250px;
+        margin-bottom: 250px;
+        padding-left: 400px;
+        padding-right: 400px;
+        font-size: 45px;
         font-weight: 800;
     }
     .solution{
-        margin-top: 250px;
+        margin-top: 350px;
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
-        padding-left: 300px;
-        padding-right: 300px;
+        padding-left: 400px;
+        padding-right: 400px;
     }
     .solution--2{
         flex-direction: row-reverse;
     }
     .title--solutions{
-        line-height: 45px;
-        font-size: 37px;
+        line-height: 55px;
+        font-size: 29px;
         margin-bottom: 25px;
-        max-width: 20ch;
+        max-width: 30ch;
     }
     .title--solutions+ p{
         font-size: 22px;
@@ -453,7 +452,7 @@ body{
         max-width: 30%;
     }
     .section__case--test{
-        margin-top: 300px;
+        margin-top: 150px;
 
     }
 

@@ -187,12 +187,12 @@ gsap.from(".texte__case--projet",{
         scrub: 0.5,
     },
 })
-gsap.from(".title--phrase",{
+gsap.from(".v1__anim",{
     opacity: 0,
     scale: 1.5,
     duration: 3,
     scrollTrigger: {
-        trigger: ".title--phrase",
+        trigger: ".v1__anim",
         start: "center 90%",
         end:"center 10%",
         scrub: 0.5,
@@ -285,6 +285,18 @@ gsap.from(".v2__anim",{
     duration: 3,
     scrollTrigger: {
         trigger: ".v2__anim",
+        start: "center 90%",
+        end:"center 10%",
+        scrub: 0.5,
+    },
+})
+
+gsap.from(".v3__anim",{
+    opacity: 0,
+    scale: 1.5,
+    duration: 3,
+    scrollTrigger: {
+        trigger: ".v3__anim",
         start: "center 90%",
         end:"center 10%",
         scrub: 0.5,
