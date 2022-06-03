@@ -14,6 +14,16 @@ gsap.from('.introduction__texte',{
 
 
 })
+
+
+
+
+
+
+
+
+
+
 gsap.from('.image--introduction',{
     x: 70,
     duration: 1,
@@ -127,16 +137,105 @@ gsap.from(".description__texte",{
     },
 })
 
-// gsap.from(".section__image img",{
-//     y: 250,
-//     duration: 3,
-//     scrollTrigger: {
-//         trigger: ".section__image img",
-//         start: "top 90%",
-//         end:"bottom 85%",
-//         scrub: 0.5,
-//     },
-// })
+
+gsap.from('.title--intro',{
+    x: -100,
+    duration: 1,
+    opacity: 0,
+    scrollTrigger: {
+        trigger: ".title--intro",
+        toggleActions: "restart none restart none"
+    },
+})
+gsap.from('.title--intro +p',{
+    duration: 1,
+    opacity: 0,
+    delay: 1,
+    scrollTrigger: {
+        trigger: ".title--intro",
+        toggleActions: "restart none restart none"
+    },
+})
+
+gsap.from(".image__anim",{
+    scale: 1.1,
+    duration: 3,
+    scrollTrigger: {
+        trigger: ".section__image",
+        start: "-60% 10%",
+        end:"60% 30%",
+        scrub: 0.5,
+        // markers: true,
+    },
+})
+
+
+
+gsap.from(".projet__anim",{
+    opacity: 0,
+    duration: 1,
+    scrollTrigger: {
+        trigger: ".projet__anim",
+        start: "center 90%",
+        end:"center 50%",
+        scrub: 0.5,
+    },
+})
+
+gsap.from(".texte__case--projet",{
+    opacity: 0,
+    duration: 1,
+    x: 30,
+    scrollTrigger: {
+        trigger: ".texte__case--projet",
+        start: "center 90%",
+        end:"center 50%",
+        scrub: 0.5,
+    },
+})
+
+
+
+gsap.from(".title--phrase",{
+    opacity: 0,
+    scale: 1.5,
+    duration: 3,
+    scrollTrigger: {
+        trigger: ".title--phrase",
+        start: "center 90%",
+        end:"center 10%",
+        scrub: 0.5,
+    },
+})
+
+gsap.from(".case__probleme--1",{
+    delay: 0.2,
+    duration: 1,
+    opacity: 0,
+    scrollTrigger: {
+        trigger: ".case__probleme--1",
+        toggleActions: "restart none restart none"
+    },
+})
+gsap.from(".case__probleme--2",{
+    delay: 0.7,
+    duration: 1,
+    opacity: 0,
+    scrollTrigger: {
+        trigger: ".case__probleme--2",
+        toggleActions: "restart none restart none"
+    },
+})
+gsap.from(".case__probleme--3",{
+    delay: 1.2,
+    duration: 1,
+    opacity: 0,
+    scrollTrigger: {
+        trigger: ".case__probleme--3",
+        toggleActions: "restart none restart none"
+    },
+})
+
 
 
 
