@@ -136,8 +136,6 @@ gsap.from(".description__texte",{
         scrub: 0.5,
     },
 })
-
-
 gsap.from('.title--intro',{
     x: -100,
     duration: 1,
@@ -156,7 +154,6 @@ gsap.from('.title--intro +p',{
         toggleActions: "restart none restart none"
     },
 })
-
 gsap.from(".image__anim",{
     scale: 1.1,
     duration: 3,
@@ -168,9 +165,6 @@ gsap.from(".image__anim",{
         // markers: true,
     },
 })
-
-
-
 gsap.from(".projet__anim",{
     opacity: 0,
     duration: 1,
@@ -193,9 +187,6 @@ gsap.from(".texte__case--projet",{
         scrub: 0.5,
     },
 })
-
-
-
 gsap.from(".title--phrase",{
     opacity: 0,
     scale: 1.5,
@@ -207,6 +198,59 @@ gsap.from(".title--phrase",{
         scrub: 0.5,
     },
 })
+gsap.from(".recherches__anim",{
+    opacity: 0,
+    duration: 1,
+    scrollTrigger: {
+        trigger: ".recherches__anim",
+        start: "center 90%",
+        end:"center 50%",
+        scrub: 0.5,
+    },
+})
+gsap.from(".texte__case--recherches",{
+    opacity: 0,
+    duration: 1,
+    x: 30,
+    scrollTrigger: {
+        trigger: ".texte__case--recherches",
+        start: "center 90%",
+        end:"center 50%",
+        scrub: 0.5,
+    },
+})
+
+
+
+gsap.from(".developpement__anim",{
+    opacity: 0,
+    duration: 1,
+    scrollTrigger: {
+        trigger: ".developpement__anim",
+        start: "center 90%",
+        end:"center 50%",
+        scrub: 0.5,
+    },
+})
+gsap.from(".texte__case--developpement",{
+    opacity: 0,
+    duration: 1,
+    x: 30,
+    scrollTrigger: {
+        trigger: ".texte__case--developpement",
+        start: "center 90%",
+        end:"center 50%",
+        scrub: 0.5,
+    },
+})
+
+
+
+
+
+
+
+
 
 gsap.from(".case__probleme--1",{
     delay: 0.2,
@@ -235,7 +279,17 @@ gsap.from(".case__probleme--3",{
         toggleActions: "restart none restart none"
     },
 })
-
+gsap.from(".v2__anim",{
+    opacity: 0,
+    scale: 1.5,
+    duration: 3,
+    scrollTrigger: {
+        trigger: ".v2__anim",
+        start: "center 90%",
+        end:"center 10%",
+        scrub: 0.5,
+    },
+})
 
 
 
