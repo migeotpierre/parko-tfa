@@ -3,6 +3,23 @@ import ScrollTrigger from 'gsap/ScrollTrigger';
 
 gsap.registerPlugin(ScrollTrigger);
 
+const cursor = document.querySelector('.cursor');
+
+document.addEventListener('mousemove', e => {
+    cursor.setAttribute("style", "top: " + (e.pageY - 10) + "px; left: " + (e.pageX - 10) + "px;")
+})
+
+document.addEventListener('click', () => {
+    cursor.classList.add("expand");
+
+    setTimeout(() => {
+        cursor.classList.remove("expand");
+    }, 500)
+})
+
+
+
+
 gsap.from('.introduction__texte',{
     x: -100,
     duration: 1,
@@ -11,19 +28,7 @@ gsap.from('.introduction__texte',{
         trigger: ".introduction__texte",
         toggleActions: "restart none restart none"
     },
-
-
 })
-
-
-
-
-
-
-
-
-
-
 gsap.from('.image--introduction',{
     x: 70,
     duration: 1,
@@ -33,7 +38,6 @@ gsap.from('.image--introduction',{
         trigger: ".introduction__texte",
         toggleActions: "restart none restart none"
     },
-
 })
 gsap.from('.button-download',{
     duration: 0.5,
@@ -43,17 +47,13 @@ gsap.from('.button-download',{
         trigger: ".introduction__texte",
         toggleActions: "restart none restart none"
     },
-
 })
 gsap.from('.header__logo',{
     duration: 1.5,
     opacity: 0,
     delay: 0.3,
-
 })
-
 gsap.from(".image1",{
-
     x: -100,
     opacity: 0,
     duration: 1,
@@ -243,15 +243,6 @@ gsap.from(".texte__case--developpement",{
         scrub: 0.5,
     },
 })
-
-
-
-
-
-
-
-
-
 gsap.from(".case__probleme--1",{
     delay: 0.2,
     duration: 1,
@@ -303,19 +294,7 @@ gsap.from(".v3__anim",{
     },
 })
 
-const cursor = document.querySelector('.cursor');
 
-document.addEventListener('mousemove', e => {
-    cursor.setAttribute("style", "top: " + (e.pageY - 10) + "px; left: " + (e.pageX - 10) + "px;")
-})
-
-document.addEventListener('click', () => {
-    cursor.classList.add("expand");
-
-    setTimeout(() => {
-        cursor.classList.remove("expand");
-    }, 500)
-})
 
 
 

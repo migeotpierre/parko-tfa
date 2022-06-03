@@ -241,6 +241,7 @@ body{
     overflow: hidden;
 }
 .section__image img{
+    z-index: -1;
     position: absolute;
     top: 0;
     left: 0;
@@ -263,6 +264,24 @@ body{
     max-width: 70%;
 }
 
+.content__scroll{
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+
+  .img__content-scroll{
+    background-color: white;
+    width: auto;
+    height: 30vh;
+    margin: 17px;
+    border: 1px solid #8800FF;
+    border-radius: 25px;
+  }
 
 
 
@@ -473,6 +492,25 @@ body{
 
     }
 
+    .content__scroll{
+        overflow-x: scroll;
+        overflow-y: hidden;
+        white-space: nowrap;
+        margin-bottom: 300px;
+        margin-top: 300px;
+        margin-left: 300px;
+        margin-right: 300px;
+      }
+    
+      .img__content-scroll{
+        background-color: white;
+        width: auto;
+        height: 60vh;
+        margin: 17px;
+        border: 1px solid #8800FF;
+        border-radius: 25px;
+      }
+
 }
 
 
@@ -604,4 +642,8 @@ body{
             animation: cursorAnim3 0.5s forwards;
     border: 1px solid blueviolet;
   }
+
+
+
+
 
