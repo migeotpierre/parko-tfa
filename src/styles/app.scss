@@ -3,7 +3,23 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
 
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
 
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+   
+::-webkit-scrollbar-thumb {
+    background: #8800FF;
+    border-radius: 10px;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    opacity: 70%; 
+}
 
 *{
     margin: 0;
@@ -18,7 +34,8 @@ body{
 }
 .container{
     overflow: hidden;
-
+    max-width: 2600px;
+    margin: auto;
 }
 .section--main, .section--explication, .section--conclusion, .section--intro, .section__case, .section__case--test, .title--phrase{
     margin: 24px 24px 24px 24px;
@@ -376,7 +393,7 @@ body{
         height: 100%;
         object-fit: cover;
     }
-    .section__case--projet, .section__case--recherches, .section__case--developpement, .section__case--test{
+    .section__case--projet, .section__case--recherches, .section__case--developpement, .section__case--test, .section__case--pivot{
         display: grid;
         grid-template-columns: 2fr 3fr;
         grid-template-rows: 1fr;
@@ -389,7 +406,7 @@ body{
         font-size: 22px;
         font-weight: 400;
     }
-    .texte__case--projet, .texte__case--projet, .texte__case--recherches, .texte__case--developpement, .texte__case--test{
+    .texte__case--projet, .texte__case--projet, .texte__case--recherches, .texte__case--developpement, .texte__case--test, .texte__case--pivot{
         padding-right: 400px;
         grid-area: 1 / 2 / 2 / 3;
     }
@@ -482,4 +499,109 @@ body{
 
 
 
+.cursor {
+    width: 20px;
+    height: 20px;
+    border: 1px solid white;
+    border-radius: 50%;
+    position: absolute;
+    -webkit-transition-duration: 200ms;
+            transition-duration: 200ms;
+    -webkit-transition-timing-function: ease-out;
+            transition-timing-function: ease-out;
+    -webkit-animation: cursorAnim 0.5s infinite alternate;
+            animation: cursorAnim 0.5s infinite alternate;
+    pointer-events: none;
+  }
+
+  .cursor::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    border: 8px solid gray;
+    border-radius: 50%;
+    opacity: 0.5;
+    top: -8px;
+    left: -8px;
+    -webkit-animation: cursorAnim2 0.5s infinite alternate;
+            animation: cursorAnim2 0.5s infinite alternate;
+  }
+
+  @-webkit-keyframes cursorAnim {
+    from {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+    to {
+      -webkit-transform: scale(0.7);
+              transform: scale(0.7);
+    }
+  }
+
+  @keyframes cursorAnim {
+    from {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+    to {
+      -webkit-transform: scale(0.7);
+              transform: scale(0.7);
+    }
+  }
+  @-webkit-keyframes cursorAnim2 {
+    from {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+    to {
+      -webkit-transform: scale(0.4);
+              transform: scale(0.4);
+    }
+  }
+  @keyframes cursorAnim2 {
+    from {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+    to {
+      -webkit-transform: scale(0.4);
+              transform: scale(0.4);
+    }
+  }
+  @-webkit-keyframes cursorAnim3 {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+    50% {
+      -webkit-transform: scale(3);
+              transform: scale(3);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      opacity: 0;
+    }
+  }
+  @keyframes cursorAnim3 {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+    50% {
+      -webkit-transform: scale(3);
+              transform: scale(3);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      opacity: 0;
+    }
+  }
+  .expand {
+    -webkit-animation: cursorAnim3 0.5s forwards;
+            animation: cursorAnim3 0.5s forwards;
+    border: 1px solid blueviolet;
+  }
 
