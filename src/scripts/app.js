@@ -1,3 +1,6 @@
+"use strict";
+
+
 import { gsap } from "gsap";
 import ScrollTrigger from 'gsap/ScrollTrigger';
 
@@ -16,7 +19,6 @@ document.addEventListener('click', () => {
         cursor.classList.remove("expand");
     }, 500)
 })
-
 
 
 
@@ -219,6 +221,98 @@ gsap.from(".texte__case--recherches",{
         scrub: 0.5,
     },
 })
+
+
+
+
+
+
+
+
+
+
+
+gsap.from(".pivot__anim",{
+    opacity: 0,
+    duration: 1,
+    scrollTrigger: {
+        trigger: ".pivot__anim",
+        start: "center 90%",
+        end:"center 50%",
+        scrub: 0.5,
+    },
+})
+gsap.from(".texte__case--pivot",{
+    opacity: 0,
+    duration: 1,
+    x: 30,
+    scrollTrigger: {
+        trigger: ".texte__case--pivot",
+        start: "center 90%",
+        end:"center 50%",
+        scrub: 0.5,
+    },
+})
+gsap.from(".test__anim",{
+    opacity: 0,
+    duration: 1,
+    scrollTrigger: {
+        trigger: ".test__anim",
+        start: "center 90%",
+        end:"center 50%",
+        scrub: 0.5,
+    },
+})
+gsap.from(".texte__case--test",{
+    opacity: 0,
+    duration: 1,
+    x: 30,
+    scrollTrigger: {
+        trigger: ".texte__case--test",
+        start: "center 90%",
+        end:"center 50%",
+        scrub: 0.5,
+    },
+})
+gsap.from(".final__anim",{
+    opacity: 0,
+    duration: 1,
+    scrollTrigger: {
+        trigger: ".final__anim",
+        start: "center 90%",
+        end:"center 50%",
+        scrub: 0.5,
+    },
+})
+gsap.from(".texte__case--final",{
+    opacity: 0,
+    duration: 1,
+    x: 30,
+    scrollTrigger: {
+        trigger: ".texte__case--final",
+        start: "center 90%",
+        end:"center 50%",
+        scrub: 0.5,
+    },
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

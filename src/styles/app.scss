@@ -158,8 +158,6 @@ body{
     max-width: 30%;
 }
 .image--introduction{
-
-    position: absolute;
     opacity: 1;
     right: 5px;
 }
@@ -300,12 +298,8 @@ body{
     height: 30vh;
     margin: 17px;
     border-radius: 25px;
+    border: #8800FF solid 1px;
   }
-
-
-
-  explication
-
 
   .explication p{
     color: black;
