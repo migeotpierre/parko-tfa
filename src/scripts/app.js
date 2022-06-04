@@ -22,6 +22,7 @@ document.addEventListener('click', () => {
 
 
 
+
 gsap.from('.introduction__texte',{
     x: -100,
     duration: 1,

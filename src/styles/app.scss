@@ -33,7 +33,7 @@ body{
 	max-width: 2600px;
 	margin: auto;
 }
-.section--main, .section--explication, .section--conclusion, .section--intro, .section__case, .section__case--test, .title--phrase{
+.section--main, .section--explication, .section--conclusion, .section--intro, .section__case, .section__case--test, .title--phrase, .section__uikit{
 	margin: 24px 24px 24px 24px;
 }
 .header__logo{
@@ -149,11 +149,13 @@ body{
 	margin-top: 250px;
 }
 .footer{
-	margin-top: 25px;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
+    margin-top: 82px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 .footer img{
 	width: 20%;
@@ -171,6 +173,9 @@ body{
 	display: flex;
 	flex-direction: row;
 	justify-content: right;
+}
+.footer span{
+    color: white;
 }
 .footer__element{
 	text-decoration: none;
@@ -494,7 +499,7 @@ body{
 		margin-bottom: 20px;
 	}
 	.footer{
-		margin-top: 25px;
+		margin-top: 80px;
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
@@ -537,6 +542,7 @@ body{
 		}
 	}
 	.cursor {
+        z-index: 10;
 		width: 20px;
 		height: 20px;
 		border: 1px solid white;
