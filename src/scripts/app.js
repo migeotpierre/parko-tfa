@@ -299,6 +299,109 @@ gsap.from(".v3__anim",{
 
 
 
+gsap.from('.solution--1 img',{
+    x: 100,
+    duration: 1,
+    opacity: 0,
+    scrollTrigger: {
+        trigger: ".solution--1",
+        toggleActions: "restart none none none"
+    },
+})
+gsap.from('.solution--2 img',{
+    x: 100,
+    duration: 1,
+    opacity: 0,
+    scrollTrigger: {
+        trigger: ".solution--2",
+        toggleActions: "restart none none none"
+    },
+})
+gsap.from('.solution--3 img',{
+    x: 100,
+    duration: 1,
+    opacity: 0,
+    scrollTrigger: {
+        trigger: ".solution--3",
+        toggleActions: "restart none none none"
+    },
+})
+
+
+
+gsap.from(".solution--1 h3",{
+    opacity: 0,
+    duration: 1,
+    x: -30,
+    scrollTrigger: {
+        trigger: ".solution--1 h3",
+        start: "center 90%",
+        end:"center 50%",
+        scrub: 0.5,
+    },
+})
+
+gsap.from(".solution--2 h3",{
+    opacity: 0,
+    duration: 1,
+    x: -30,
+    scrollTrigger: {
+        trigger: ".solution--2 h3",
+        start: "center 90%",
+        end:"center 50%",
+        scrub: 0.5,
+    },
+})
+
+gsap.from(".solution--3 h3",{
+    opacity: 0,
+    duration: 1,
+    x: -30,
+    scrollTrigger: {
+        trigger: ".solution--3 h3",
+        start: "center 90%",
+        end:"center 50%",
+        scrub: 0.5,
+    },
+})
+
+
+
+gsap.from(".solution--1 p",{
+    opacity: 0,
+    duration: 1,
+    x: -30,
+    scrollTrigger: {
+        trigger: ".solution--1 p",
+        start: "center 90%",
+        end:"center 50%",
+        scrub: 0.5,
+    },
+})
+
+gsap.from(".solution--2 p",{
+    opacity: 0,
+    duration: 1,
+    x: -30,
+    scrollTrigger: {
+        trigger: ".solution--2 p",
+        start: "center 90%",
+        end:"center 50%",
+        scrub: 0.5,
+    },
+})
+
+gsap.from(".solution--3 p",{
+    opacity: 0,
+    duration: 1,
+    x: -30,
+    scrollTrigger: {
+        trigger: ".solution--3 p",
+        start: "center 90%",
+        end:"center 50%",
+        scrub: 0.5,
+    },
+})
 
 
 

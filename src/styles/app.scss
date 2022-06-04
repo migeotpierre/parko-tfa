@@ -27,6 +27,14 @@
 }
 
 
+hr{
+    
+    border-top: 1px solid #8800FF;
+    margin-left: 48px;
+    margin-right: 48px;
+    margin-top: 100px;
+}
+
 
 
 body{
@@ -85,12 +93,12 @@ body{
     color: black;
     margin-bottom: 25px;
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 700;
 }.texte__case  p + p{
     color: black;
     margin-bottom: 25px;
     font-size: 18px;
-    font-weight: 800;
+    font-weight: 400;
 }
 
 
@@ -118,6 +126,16 @@ body{
 .case__problemes{
     margin-top: 100px;
 }
+.pivot-liste__elements li{
+    list-style: disc;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 24px;
+    color: black;
+}
+.pivot-liste__element{
+    margin-bottom: 20px;
+}
 
 
 
@@ -137,7 +155,7 @@ body{
     align-items: flex-start;
 }
 .image{
-    max-width: 40%;
+    max-width: 30%;
 }
 .image--introduction{
 
@@ -250,7 +268,7 @@ body{
     object-fit: cover;
 }
 .solution{
-    margin-top: 150px;
+    margin-top: 90px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -258,11 +276,13 @@ body{
 .title--solutions{
     font-size: 25px;
     margin-bottom: 25px;
+    color: black;
 }
 .solution img{
     margin-top: 50px;
-    max-width: 70%;
+    max-width: 60%;
 }
+
 
 .content__scroll{
     overflow-x: scroll;
@@ -279,15 +299,17 @@ body{
     width: auto;
     height: 30vh;
     margin: 17px;
-    border: 1px solid #8800FF;
     border-radius: 25px;
   }
 
 
 
+  explication
 
 
-
+  .explication p{
+    color: black;
+  }
 
 
 
@@ -298,7 +320,13 @@ body{
 
 @media (min-width: 1000px){
 
-
+    hr{
+        display: none;
+        border-top: 1px solid #8800FF;
+        margin-left: 600px;
+        margin-right: 600px;
+        margin-top: 200px;
+    }
     .section--main, .section--explication, .section--intro{
         margin: 100px;
     }
@@ -313,8 +341,11 @@ body{
         justify-content: space-between;
     }
     .title{
-        font-size: 65px;
+        font-size: 44px;
         margin-bottom: 50px;
+    }
+    .title--accueil{
+        font-size: 65px;
     }
     .title--intro{
         max-width: 22ch;
@@ -322,7 +353,7 @@ body{
     .title--intro + p{
         text-transform: uppercase;
         margin-top: 15px;
-        font-size: 22px;
+        font-size: 19px;
         font-weight: 400;
     
     }
@@ -331,6 +362,7 @@ body{
     }
     .image--introduction{
         right: 100px;
+        max-width: 15%;
 
     }
 
@@ -344,8 +376,10 @@ body{
     }
     
     .introduction p{
-        margin-top: 0px;
-        max-width: 50ch;
+        font-size: 19px;
+        color: black;
+        margin-bottom: 50px;
+        max-width: 40ch;
     }
     .button-download{
         margin-top: 50px;
@@ -373,8 +407,10 @@ body{
     .explication{
         flex-direction: row-reverse;
         align-items: center;
-        justify-content: center;
+        justify-content: space-around;
         margin-top: 150px;
+        padding-left: 200px;
+        padding-right: 200px;
     }
     .conclusion{
         flex-direction: row;
@@ -386,12 +422,15 @@ body{
     .explication--1{
         flex-direction: row;
     }
-    .section--explication h2{
-        font-size: 32px;
+    .section--explication h2, .section--conclusion h2{
+        font-size: 44px;
         max-width: 18ch;
         font-weight: 800;
+        color: black;
     }
-    .section--explication p, .conclusion p{
+    .section--explication p, .section--conclusion p{
+        font-size: 19px;
+        color: black;
         margin-bottom: 50px;
         max-width: 40ch;
     }
@@ -412,7 +451,7 @@ body{
         height: 100%;
         object-fit: cover;
     }
-    .section__case--projet, .section__case--recherches, .section__case--developpement, .section__case--test, .section__case--pivot{
+    .section__case--projet, .section__case--recherches, .section__case--developpement, .section__case--test, .section__case--pivot, .section__case--final{
         display: grid;
         grid-template-columns: 2fr 3fr;
         grid-template-rows: 1fr;
@@ -422,10 +461,10 @@ body{
     .title--case{ 
         grid-area: 1 / 1 / 2 / 2; 
         padding-left: 400px;
-        font-size: 22px;
+        font-size: 19px;
         font-weight: 400;
     }
-    .texte__case--projet, .texte__case--projet, .texte__case--recherches, .texte__case--developpement, .texte__case--test, .texte__case--pivot{
+    .texte__case--projet, .texte__case--projet, .texte__case--recherches, .texte__case--developpement, .texte__case--test, .texte__case--pivot, .texte__case--final{
         padding-right: 400px;
         grid-area: 1 / 2 / 2 / 3;
     }
@@ -433,35 +472,33 @@ body{
         align-items: flex-start;
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
-        padding-right: 200px;
-        padding-left: 200px;
-        margin-bottom: 350px;
+        justify-content: space-around;
+        padding-right: 150px;
+        padding-left: 150px;
+        margin-bottom: 300px;
+  
     }
     .case__probleme p{
         color: black;
-        font-size: 22px;
+        font-size: 28px;
         font-weight: 600;
     }
     .title--intro + p, .title--case, .texte__case p{
-        font-size: 22px;
-        font-weight: 400;
+        font-size: 19px;
     }
     .texte__case  p + p{
-        font-size: 22px;
-        font-weight: 800;
+        font-size: 19px;
     }
     
     .title--phrase{
         margin-top: 250px;
         margin-bottom: 250px;
-        padding-left: 400px;
-        padding-right: 400px;
-        font-size: 45px;
-        font-weight: 800;
+        padding-left: 600px;
+        padding-right: 600px;
+        font-size: 44px;
+        font-weight: 700;
     }
     .solution{
-        margin-top: 350px;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -469,23 +506,20 @@ body{
         padding-left: 400px;
         padding-right: 400px;
     }
-    .solution--2{
-        flex-direction: row-reverse;
-    }
     .title--solutions{
-        line-height: 55px;
-        font-size: 29px;
+        line-height: 40px;
+        font-size: 27px;
         margin-bottom: 25px;
         max-width: 30ch;
     }
     .title--solutions+ p{
-        font-size: 22px;
+        font-size: 19px;
         margin-bottom: 25px;
         max-width: 50ch;
     }
     .solution img{
         margin-top: 0px;
-        max-width: 30%;
+        max-width: 20%;
     }
     .section__case--test{
         margin-top: 150px;
@@ -499,21 +533,25 @@ body{
         overflow-y: hidden;
         white-space: nowrap;
         margin-bottom: 300px;
-        margin-top: 300px;
-        margin-left: 300px;
-        margin-right: 300px;
+        margin-top: 150px;
+        margin-left: 400px;
+        margin-right: 400px;
       }
     
       .img__content-scroll{
         background-color: white;
         width: auto;
-        height: 60vh;
+        height: 40vh;
         margin: 17px;
-        border: 1px solid #8800FF;
         border-radius: 25px;
       }
+      .pivot-liste__elements li{
+        font-size: 19px;
+    }
+    .pivot-liste__element{
+        margin-bottom: 20px;
+    }
 
-}
 
 
 
@@ -644,8 +682,4 @@ body{
             animation: cursorAnim3 0.5s forwards;
     border: 1px solid blueviolet;
   }
-
-
-
-
-
+}
