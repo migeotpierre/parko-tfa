@@ -277,6 +277,12 @@ body{
 .explication p{
 	color: black;
 }
+.logo__dwt{
+	text-align: center;
+}
+
+
+
 @media (min-width: 1000px){
 	hr{
 		display: none;
@@ -508,8 +514,11 @@ body{
 		align-items: center;
 	}
 	.footer img{
-		width: 5%;
+		width: 25%;
 		margin: 10px;
+	}
+	.logo__dwt{
+		text-align: start;
 	}
 	@media (min-width: 1600px){
 		body{
