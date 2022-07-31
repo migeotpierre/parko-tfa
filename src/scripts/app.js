@@ -20,85 +20,123 @@ document.addEventListener('click', () => {
     }, 500)
 })
 
+var intro = document.querySelector('.introduction__texte');
+if(intro){
+    gsap.from('.introduction__texte',{
+        x: -100,
+        duration: 1,
+        opacity: 0,
+        scrollTrigger: {
+            trigger: ".introduction__texte",
+            toggleActions: "restart none restart none"
+        },
+    })
+};
+
+var introimg = document.querySelector('.image--introduction');
+if(introimg){
+    gsap.from('.image--introduction',{
+        x: 70,
+        duration: 1,
+        opacity: 0,
+        delay: 0.25,
+        scrollTrigger: {
+            trigger: ".introduction__texte",
+            toggleActions: "restart none restart none"
+        },
+    })
+};
+
+var boutons = document.querySelector('.button-download');
+if(boutons){
+    gsap.from('.button-download',{
+        duration: 0.5,
+        opacity: 0,
+        delay: 1.5,
+        scrollTrigger: {
+            trigger: ".introduction__texte",
+            toggleActions: "restart none restart none"
+        },
+    })
+};
+
+
+var headerlogo = document.querySelector('.header__logo');
+if(headerlogo){
+    gsap.from('.header__logo',{
+        duration: 1.5,
+        opacity: 0,
+        delay: 0.3,
+    })
+};
+
+var image1 = document.querySelector('.image1');
+if(image1){
+    gsap.from(".image1",{
+        x: -100,
+        opacity: 0,
+        duration: 1,
+        scrollTrigger: {
+            trigger: ".image1",
+            start: "center 90%",
+            end:"center 50%",
+            scrub: true,
+        },
+    })
+};
+
+var image2 = document.querySelector('.image2');
+if(image2){
+    gsap.from(".image2",{
+        x: 100,
+        opacity: 0,
+        duration: 1,
+        scrollTrigger: {
+            trigger: ".image2",
+            start: "center 90%",
+            end:"center 50%",
+            scrub: true,
+        },
+    })
+};
+
+var image3 = document.querySelector('.image3');
+if(image3){
+    gsap.from(".image3",{
+        x: -100,
+        opacity: 0,
+        duration: 1,
+        scrollTrigger: {
+            trigger: ".image3",
+            start: "center 90%",
+            end:"center 50%",
+            scrub: 0.5,
+        },
+    })
+};
+
+var explication1 = document.querySelector('.explication1');
+if(explication1){
+    gsap.from(".explication1",{
+        opacity: 0,
+        duration: 1,
+        scrollTrigger: {
+            trigger: ".explication1",
+            start: "center 90%",
+            end:"center 50%",
+            scrub: 0.5,
+        },
+    })
+};
 
 
 
-gsap.from('.introduction__texte',{
-    x: -100,
-    duration: 1,
-    opacity: 0,
-    scrollTrigger: {
-        trigger: ".introduction__texte",
-        toggleActions: "restart none restart none"
-    },
-})
-gsap.from('.image--introduction',{
-    x: 70,
-    duration: 1,
-    opacity: 0,
-    delay: 0.25,
-    scrollTrigger: {
-        trigger: ".introduction__texte",
-        toggleActions: "restart none restart none"
-    },
-})
-gsap.from('.button-download',{
-    duration: 0.5,
-    opacity: 0,
-    delay: 1.5,
-    scrollTrigger: {
-        trigger: ".introduction__texte",
-        toggleActions: "restart none restart none"
-    },
-})
-gsap.from('.header__logo',{
-    duration: 1.5,
-    opacity: 0,
-    delay: 0.3,
-})
-gsap.from(".image1",{
-    x: -100,
-    opacity: 0,
-    duration: 1,
-    scrollTrigger: {
-        trigger: ".image1",
-        start: "center 90%",
-        end:"center 50%",
-        scrub: true,
-    },
-})
-gsap.from(".image2",{
-    x: 100,
-    opacity: 0,
-    duration: 1,
-    scrollTrigger: {
-        trigger: ".image2",
-        start: "center 90%",
-        end:"center 50%",
-        scrub: true,
-    },
-})
-gsap.from(".image3",{
-    x: -100,
-    opacity: 0,
-    duration: 1,
-    scrollTrigger: {
-        trigger: ".image3",
-        start: "center 90%",
-        end:"center 50%",
-        scrub: 0.5,
-    },
-})
-gsap.from(".explication1",{
-    opacity: 0,
-    duration: 1,
-    scrollTrigger: {
-        trigger: ".explication1",
-        start: "center 90%",
-        end:"center 50%",
-        scrub: 0.5,
-    },
-})
+
+
+
+
+
+
 gsap.from(".explication2",{
     opacity: 0,
     duration: 1,
