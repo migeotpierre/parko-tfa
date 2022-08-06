@@ -357,9 +357,20 @@ p {
 }
 
 .uikit-principal {
-  font-size: 44px;
+  font-size: 32px;
   color: black;
   font-weight: 800;
+}
+.section__credits ul {
+  padding: 50px;
+  font-size: 22px;
+  color: #8800FF;
+  font-weight: 200;
+}
+.uikit-principal:hover{
+
+  color: #8800FF;
+
 }
 
 .uikit-secondaire {
